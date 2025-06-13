@@ -1,0 +1,51 @@
+.services-section {
+  padding: 4rem 2rem;
+  background-color: #f9f6ff;
+  text-align: center;
+
+}
+
+.services-heading {
+  font-size: 2.8rem;
+  color: #9145ff;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #ddd;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+
+}
+
+.service-card h3 {
+  color: #6633cc;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.service-card p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.service-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  border-color: #c17dff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}

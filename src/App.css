@@ -1,0 +1,148 @@
+.app {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+/* 
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  color: #EEE3FF;
+} */
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2; /* push it further back */
+  /* filter: blur(1px) brightness(0.9); */
+ }
+
+.bg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.1); /* optional extra overlay */
+  z-index: -1;
+}
+
+.navbar {
+  display:flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #C17DFF;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #EEE3FF;
+  
+}
+
+.nav-links li:hover {
+  color: #FFD73F;
+  transform: scale(1.05);
+}
+
+/* .hero {
+  text-align: center;
+  margin-top: 20vh;
+  padding: 2rem;
+} */
+.hero {
+  text-align: center;
+  margin-top: 2vh; /* reduced from 20vh */
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #9145ff;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  margin-top: 0; /* removed margin-top to align with navbar */
+}
+
+.hero p {
+  font-size: 2rem;
+  color: black;
+  margin-top: 0vh; /* lowered from 20vh to raise the content */
+  margin-bottom: 32px;
+ font-weight: bold;
+
+}
+
+.start-btn {
+  margin-top: 0;
+  padding: 0.9rem 2.2rem;
+  background-color: #FFD73F;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #000;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.start-btn:hover {
+  background-color: #ffcb00;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+#services {
+  margin-top: 100vh; /* pushes it below the full-screen hero */
+  padding: 4rem 2rem;
+  background-color: #f8f3ff;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #FFD73F;
+  transform: scale(1.05);
+}
