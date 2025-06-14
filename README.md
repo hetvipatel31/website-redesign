@@ -1,4 +1,4 @@
-# 🌐 Senkusha Official Website
+# 🌐 Senkusha Website Redesign
 
 A modern, responsive company website for **Senkusha**, built using **React.js**. 
 
